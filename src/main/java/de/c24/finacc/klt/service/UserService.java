@@ -1,8 +1,9 @@
-package de.c24.finacc.klt.business.service;
+package de.c24.finacc.klt.service;
+
+import de.c24.finacc.klt.persistance.entity.User;
 
 import java.util.List;
 
-import de.c24.finacc.klt.persistance.entity.User;
 
 public interface UserService {
 

@@ -1,13 +1,13 @@
-package de.c24.finacc.klt.business.service.impl;
+package de.c24.finacc.klt.service.impl;
 
-import java.util.List;
-
+import de.c24.finacc.klt.service.UserService;
+import de.c24.finacc.klt.persistance.dao.UserRepository;
+import de.c24.finacc.klt.persistance.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import de.c24.finacc.klt.business.service.UserService;
-import de.c24.finacc.klt.persistance.dao.UserRepository;
-import de.c24.finacc.klt.persistance.entity.User;
+import java.util.List;
+
 
 @Service
 public class UserServiceImpl implements UserService {
