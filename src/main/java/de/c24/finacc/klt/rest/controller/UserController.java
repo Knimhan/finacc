@@ -1,4 +1,4 @@
-package de.c24.finacc.klt.web.controller;
+package de.c24.finacc.klt.rest.controller;
 
 import de.c24.finacc.klt.service.UserService;
 import de.c24.finacc.klt.persistance.entity.User;
