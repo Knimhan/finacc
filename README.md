@@ -12,3 +12,11 @@ Go to browser window and hit
         http://localhost:8080/klt
 
 Yay! Application is running now.
+
+
+#Notes
+
+##Technology Stack
+Backend: Spring Boot
+
+Frontend: Angular (I have used Angular for the frontend instead of updating jsp pages.)
