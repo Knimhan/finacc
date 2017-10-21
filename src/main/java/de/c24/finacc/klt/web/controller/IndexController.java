@@ -13,37 +13,19 @@ import java.util.Map;
 /**
  * IndexController
  *
- * @author Jörn Schricker
  */
 @Controller
 public class IndexController {
     private static final Logger LOGGER = LogManager.getLogger(IndexController.class);
 
-    @Value("${form.title}")
-    private String formTitle;
-
     /**
-     * the index page
+     * the index page of angular
      *
-     * @return ModelAndView for index page.
+     * @return index.html file from target/classes/static directory.
      */
-    @GetMapping({"/", "/index"})
-    public String index(Map<String, Object> model) {
-        model.put("formName", formTitle);
-
-        return "index";
+    @GetMapping({ "/klt/**" })
+    public String index() {
+        return "forward:/index.html";
     }
 
-
-    /**
-     * the index page
-     *
-     * @return ModelAndView for index page.
-     */
-    @PostMapping({"/", "/index"})
-    public String submitForm(@RequestParam("firstName") String firstName, @RequestParam("lastName") String lastName) {
-        LOGGER.debug("submit first name {} last name {}", firstName, lastName);
-
-        return "index";
-    }
 }
