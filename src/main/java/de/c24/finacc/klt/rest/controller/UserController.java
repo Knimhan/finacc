@@ -2,7 +2,6 @@ package de.c24.finacc.klt.rest.controller;
 
 import de.c24.finacc.klt.service.UserService;
 import de.c24.finacc.klt.persistance.entity.User;
-import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
