@@ -1,0 +1,32 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header">
+        <h4>Create new user</h4>
+      </div>
+      <div class="card-body">
+        <form>
+          <div class="form-row">
+            <div class="form-group col-md-4">
+              <label class="col-form-label">First Name</label>
+              <input type="text" class="form-control" placeholder="First Name" [(ngModel)]="firstName" name="firstName" required>
+            </div>
+            <div class="form-group col-md-4">
+              <label class="col-form-label">Last Name</label>
+              <input type="text" class="form-control" placeholder="Last Name" [(ngModel)]="lastName" name="lastName" required>
+            </div>
+            <div class="form-group col-md-4">
+              <label class="col-form-label">Age</label>
+              <input type="text" (focusout)="validateAge(age)" class="form-control" type="number" placeholder="Age" [(ngModel)]="age" name="age" >
+              <label class="control-label" [ngClass]="{'text-danger': disabledSubmit,'text-primary': !disabledSubmit}" *ngIf="ageStatus">Status : {{ageStatus}}</label>
+            </div>
+          </div>
+          <div class="form-row float-right">
+            <button type="submit" class="btn btn-primary mr-1" (click)="save()" [disabled]="disabledSubmit">Save</button>
+            <button class="btn btn-outline-dark mr-2" (click)="clear()">Clear</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
